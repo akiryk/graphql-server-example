@@ -1,3 +1,21 @@
-The point of this repo is to make an apollo server using [this tutorial](https://www.apollographql.com/docs/apollo-server/getting-started/).
+# Apollo Server
+
+Deployed on Heroku.
+
+[Started with ApolloServer tutorial](https://www.apollographql.com/docs/apollo-server/getting-started/).
 
 deployed to https://varioso.herokuapp.com/
+See sandbox at https://varioso-668b109fd65d.herokuapp.com/
+
+## Get Started
+
+- `npm run compile`
+- locally, visit http://localhost:4000/
+
+Push changes:
+
+- `git add .`
+- `git commit -m "my message"`
+- `git push heroku`
+
+To see logs: `heroku logs --tail`
