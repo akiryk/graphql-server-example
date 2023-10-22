@@ -18,4 +18,6 @@ Push changes:
 - `git commit -m "my message"`
 - `git push heroku`
 
+To see the graphql explorer, run `heroku open`
+
 To see logs: `heroku logs --tail`
