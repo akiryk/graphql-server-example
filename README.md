@@ -21,3 +21,5 @@ Push changes:
 To see the graphql explorer, run `heroku open`
 
 To see logs: `heroku logs --tail`
+
+To change configs, go to [varioso/settings](https://dashboard.heroku.com/apps/varioso/settings) and open "Config Vars"
