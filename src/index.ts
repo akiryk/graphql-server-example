@@ -14,7 +14,7 @@ mongoose
   .connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  })
+  } as ConnectOptions)
   .then(() => {
     console.log(`
       🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
