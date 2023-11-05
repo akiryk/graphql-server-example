@@ -3,7 +3,6 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import { resolvers } from "./resolvers.js";
 import { typeDefs } from "./models/typeDefs.js";
 import mongoose from "mongoose";
-console.log(process.env);
 if (!process.env.MONGODB_URI) {
     throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
 }
