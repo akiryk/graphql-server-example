@@ -25,9 +25,10 @@ Currently, I'm playing around in the one called sample_mflix.
 
 Push changes:
 
-- `git add .`
-- `git commit -m "my message"`
-- `git push heroku`
+You can `git push heroku` but this repo is on github so better to:
+
+- `git push`
+- then `git push heroku` or else [visit heroku](https://dashboard.heroku.com/apps/varioso/deploy/github) and click to deploy the main branch.
 
 To see the graphql explorer, run `heroku open`
 
@@ -36,6 +37,10 @@ To see logs: `heroku logs --tail`
 To see the app in Next on Vercel: https://basic-next-app-alpha.vercel.app/
 
 To change configs, go to [varioso/settings](https://dashboard.heroku.com/apps/varioso/settings) and open "Config Vars"
+
+## Heroku gotchas
+
+- Be sure the Procfile points to the correct node command (e.g. if you change files to be in a `dist` directory, change the Procfile)
 
 ## Background
 
