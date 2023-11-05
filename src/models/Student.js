@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const Student: StudentProps =
+export const Student =
   mongoose.models.Student ||
   mongoose.model("Student", {
     firstName: String,

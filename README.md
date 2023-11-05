@@ -18,8 +18,7 @@ Currently, I'm playing around in the one called sample_mflix.
 
 ## Run locally
 
-- `nvm use 20` Use at least Node version 20
-- `npm run compile`
+- `npm run dev`
 - locally, visit http://localhost:4000/
 
 ## Run in Prod

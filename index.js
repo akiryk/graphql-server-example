@@ -1,8 +1,9 @@
+import "dotenv/config";
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-import { resolvers } from "./resolvers.js";
-import { typeDefs } from "./models/typeDefs.js";
-import mongoose, { ConnectOptions } from "mongoose";
+import { resolvers } from "./src/resolvers.js";
+import { typeDefs } from "./src/models/typeDefs.js";
+import mongoose from "mongoose";
 
 if (!process.env.MONGODB_URI) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
@@ -14,7 +15,7 @@ mongoose
   .connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  } as ConnectOptions)
+  })
   .then(() => {
     console.log(`
       🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
